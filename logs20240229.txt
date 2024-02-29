@@ -1045,3 +1045,80 @@ System.FormatException: Failed to convert parameter value from a String to a Int
 2024-02-29 04:01:24.079 -05:00 [INF] Executed action N5Challenge.Controllers.ModifyPermissionController.ModifyPermission (N5Challenge) in 12551.7284ms
 2024-02-29 04:01:24.079 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.ModifyPermissionController.ModifyPermission (N5Challenge)'
 2024-02-29 04:01:24.083 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/ModifyPermission/PermissionTypeId, Name?permissionTypeId=8&name=modify%20from%20browser - 200 null text/plain; charset=utf-8 12578.9732ms
+2024-02-29 04:08:24.962 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 04:08:24.985 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 04:08:24.999 -05:00 [INF] Hosting environment: Development
+2024-02-29 04:08:24.999 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 04:08:25.198 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 243.0522ms
+2024-02-29 04:08:25.257 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 04:08:25.257 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 04:08:25.262 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5946ms
+2024-02-29 04:08:25.294 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.1129ms
+2024-02-29 04:08:25.611 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 04:08:25.683 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.896ms
+2024-02-29 04:09:17.848 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44367/ - null null
+2024-02-29 04:09:17.852 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44367/ - 404 null null 4.0358ms
+2024-02-29 04:09:17.854 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44367/, Response status code: 404
+2024-02-29 04:09:37.150 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44367/GetPermissions - null null
+2024-02-29 04:09:37.153 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:09:37.169 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 04:09:37.969 -05:00 [INF] Display Permissions List
+2024-02-29 04:09:37.973 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 04:09:37.978 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 806.4732ms
+2024-02-29 04:09:37.978 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:09:37.982 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44367/GetPermissions - 200 null application/json; charset=utf-8 832.4296ms
+2024-02-29 04:09:57.701 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44367/GetPermissions?employeeId%0A=1 - null null
+2024-02-29 04:09:57.701 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:09:57.702 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 04:09:57.719 -05:00 [INF] Display Permissions List
+2024-02-29 04:09:57.722 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 04:09:57.723 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 20.5627ms
+2024-02-29 04:09:57.723 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:09:57.723 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44367/GetPermissions?employeeId%0A=1 - 200 null application/json; charset=utf-8 22.0846ms
+2024-02-29 04:10:11.850 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44367/GetPermissions?EmployeeId%0A=1 - null null
+2024-02-29 04:10:11.851 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:10:11.851 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 04:10:11.902 -05:00 [INF] Display Permissions List
+2024-02-29 04:10:11.902 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 04:10:11.903 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 51.5624ms
+2024-02-29 04:10:11.903 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:10:11.903 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44367/GetPermissions?EmployeeId%0A=1 - 200 null application/json; charset=utf-8 53.016ms
+2024-02-29 04:10:23.289 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44367/GetPermissions?EmployeeId%0A=1 - null null
+2024-02-29 04:10:23.289 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:10:23.289 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 04:10:23.291 -05:00 [INF] Display Permissions List
+2024-02-29 04:10:23.291 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 04:10:23.291 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 1.8578ms
+2024-02-29 04:10:23.291 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:10:23.292 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44367/GetPermissions?EmployeeId%0A=1 - 200 null application/json; charset=utf-8 2.9072ms
+2024-02-29 04:10:51.860 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 04:10:51.863 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:10:51.863 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 04:10:51.873 -05:00 [INF] Display Permissions List
+2024-02-29 04:10:51.874 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 04:10:51.875 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 11.3167ms
+2024-02-29 04:10:51.875 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:10:51.875 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 200 null application/json; charset=utf-8 16.0465ms
+2024-02-29 04:10:59.057 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 04:10:59.076 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:10:59.076 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 04:10:59.077 -05:00 [INF] Display Permissions List
+2024-02-29 04:10:59.079 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 04:10:59.080 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 4.1211ms
+2024-02-29 04:10:59.080 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:10:59.080 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 200 null application/json; charset=utf-8 23.2065ms
+2024-02-29 04:11:11.177 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44367/GetPermissions?employeeId=1%0A=1 - null null
+2024-02-29 04:11:11.177 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:11:11.177 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 04:11:11.181 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 04:11:11.197 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 19.7908ms
+2024-02-29 04:11:11.197 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:11:11.197 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44367/GetPermissions?employeeId=1%0A=1 - 400 null application/problem+json; charset=utf-8 20.8629ms
+2024-02-29 04:11:34.768 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 04:11:34.768 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:11:34.768 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 04:11:34.769 -05:00 [INF] Display Permissions List
+2024-02-29 04:11:34.769 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 04:11:34.770 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 1.8016ms
+2024-02-29 04:11:34.770 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 04:11:34.770 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44367/GetPermissions?employeeId=1 - 200 null application/json; charset=utf-8 2.6788ms
