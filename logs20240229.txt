@@ -1,0 +1,1047 @@
+2024-02-29 00:07:10.790 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 00:07:10.814 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 00:07:10.828 -05:00 [INF] Hosting environment: Development
+2024-02-29 00:07:10.828 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 00:07:10.990 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 205.974ms
+2024-02-29 00:07:11.040 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 00:07:11.040 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 00:07:11.046 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.165ms
+2024-02-29 00:07:11.091 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.0873ms
+2024-02-29 00:07:11.420 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 00:07:11.502 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.3092ms
+2024-02-29 00:07:30.792 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 00:07:30.798 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:07:30.802 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:07:30.804 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'N5Challenge.Controllers.GetPermissionsController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-29 00:07:30.820 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 500 null text/plain; charset=utf-8 28.3731ms
+2024-02-29 00:10:27.762 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 00:10:27.782 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 00:10:27.792 -05:00 [INF] Hosting environment: Development
+2024-02-29 00:10:27.792 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 00:10:27.954 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 198.8531ms
+2024-02-29 00:10:28.009 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 00:10:28.009 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 00:10:28.016 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.7668ms
+2024-02-29 00:10:28.048 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.6562ms
+2024-02-29 00:10:28.411 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 00:10:28.500 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.821ms
+2024-02-29 00:10:34.426 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 00:10:34.431 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:10:34.447 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 00:10:56.434 -05:00 [ERR] Error while processing permission request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at N5Challenge.Controllers.GetPermissionsController.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Controllers\GetPermissionsController.cs:line 31
+2024-02-29 00:10:56.453 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-02-29 00:10:56.457 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 22006.9353ms
+2024-02-29 00:10:56.457 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:10:56.457 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 400 null text/plain; charset=utf-8 22031.4824ms
+2024-02-29 00:11:47.629 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 00:11:47.646 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 00:11:47.666 -05:00 [INF] Hosting environment: Development
+2024-02-29 00:11:47.666 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 00:11:47.813 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 190.5198ms
+2024-02-29 00:11:47.864 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 00:11:47.874 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 00:11:47.880 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.3709ms
+2024-02-29 00:11:47.912 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.3008ms
+2024-02-29 00:11:48.236 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 00:11:48.325 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.0562ms
+2024-02-29 00:11:53.572 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 00:11:53.577 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:11:53.593 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 00:12:36.713 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 00:12:36.776 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 00:12:36.788 -05:00 [INF] Hosting environment: Development
+2024-02-29 00:12:36.788 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 00:12:36.926 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 216.8374ms
+2024-02-29 00:12:36.971 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 00:12:36.974 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 00:12:37.013 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.0813ms
+2024-02-29 00:12:37.037 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.5638ms
+2024-02-29 00:12:37.359 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 00:12:37.431 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.9066ms
+2024-02-29 00:12:42.096 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 00:12:42.101 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:12:42.116 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 00:14:48.020 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 00:14:48.045 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 00:14:48.054 -05:00 [INF] Hosting environment: Development
+2024-02-29 00:14:48.054 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 00:14:48.207 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 192.8256ms
+2024-02-29 00:14:48.290 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 00:14:48.290 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 00:14:48.300 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.4003ms
+2024-02-29 00:14:48.334 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.3325ms
+2024-02-29 00:14:48.656 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 00:14:48.737 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.7959ms
+2024-02-29 00:14:52.852 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 00:14:52.858 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:14:52.873 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 00:17:58.182 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 00:17:58.207 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 00:17:58.219 -05:00 [INF] Hosting environment: Development
+2024-02-29 00:17:58.219 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 00:17:58.361 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 185.9144ms
+2024-02-29 00:17:58.412 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 00:17:58.412 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 00:17:58.446 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.1967ms
+2024-02-29 00:17:58.472 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.583ms
+2024-02-29 00:17:58.795 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 00:17:58.875 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.6685ms
+2024-02-29 00:18:03.387 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 00:18:03.392 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:18:03.408 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 00:22:11.760 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 00:22:11.783 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 00:22:11.793 -05:00 [INF] Hosting environment: Development
+2024-02-29 00:22:11.793 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 00:22:11.941 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 187.4259ms
+2024-02-29 00:22:11.989 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 00:22:11.990 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 00:22:11.996 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.4832ms
+2024-02-29 00:22:12.015 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.6057ms
+2024-02-29 00:22:12.348 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 00:22:12.439 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.5492ms
+2024-02-29 00:22:18.066 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 00:22:18.071 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:22:18.087 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 00:22:18.092 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 2.3829ms
+2024-02-29 00:22:18.092 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:22:18.095 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'N5Challenge.Repositories.PermissionsRepository' while attempting to activate 'N5Challenge.Controllers.GetPermissionsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-29 00:22:18.110 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 500 null text/plain; charset=utf-8 44.9077ms
+2024-02-29 00:23:09.908 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 00:23:09.933 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 00:23:09.943 -05:00 [INF] Hosting environment: Development
+2024-02-29 00:23:09.943 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 00:23:10.098 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 196.1139ms
+2024-02-29 00:23:10.155 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 00:23:10.156 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 00:23:10.192 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.0204ms
+2024-02-29 00:23:10.220 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.3066ms
+2024-02-29 00:23:10.550 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 00:23:10.642 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.2076ms
+2024-02-29 00:23:15.549 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 00:23:15.554 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:23:15.569 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 00:23:15.572 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 1.7385ms
+2024-02-29 00:23:15.573 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:23:15.575 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'N5Challenge.Repositories.PermissionsRepository' while attempting to activate 'N5Challenge.Controllers.GetPermissionsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-29 00:23:15.591 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 500 null text/plain; charset=utf-8 41.6938ms
+2024-02-29 00:40:14.702 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 00:40:14.724 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 00:40:14.733 -05:00 [INF] Hosting environment: Development
+2024-02-29 00:40:14.733 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 00:40:14.888 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 193.4552ms
+2024-02-29 00:40:14.945 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 00:40:14.945 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 00:40:14.954 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.5639ms
+2024-02-29 00:40:14.982 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.2555ms
+2024-02-29 00:40:15.298 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 00:40:15.370 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.5898ms
+2024-02-29 00:40:20.106 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 00:40:20.110 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:40:20.125 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 00:40:20.129 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 1.7759ms
+2024-02-29 00:40:20.130 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 00:40:20.132 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'N5Challenge.Repositories.PermissionsRepository' while attempting to activate 'N5Challenge.Controllers.GetPermissionsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-29 00:40:20.146 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 500 null text/plain; charset=utf-8 40.4039ms
+2024-02-29 01:43:16.642 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 01:43:16.660 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 01:43:16.679 -05:00 [INF] Hosting environment: Development
+2024-02-29 01:43:16.680 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 01:43:16.824 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 189.455ms
+2024-02-29 01:43:16.872 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 01:43:16.881 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 01:43:16.887 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 11.0442ms
+2024-02-29 01:43:16.923 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.1099ms
+2024-02-29 01:43:17.308 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 01:43:17.406 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 98.0171ms
+2024-02-29 01:43:21.419 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:43:21.427 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:43:21.445 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:43:22.699 -05:00 [ERR] Failed executing DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC GetPermissions @param1=1
+2024-02-29 01:43:22.713 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'GetPermissions' expects parameter '@EmployeeId', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:35cce5e0-98d5-4448-b883-c5643fa06914
+Error Number:201,State:4,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'GetPermissions' expects parameter '@EmployeeId', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:35cce5e0-98d5-4448-b883-c5643fa06914
+Error Number:201,State:4,Class:16
+2024-02-29 01:43:22.757 -05:00 [ERR] Error while processing permission request
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'GetPermissions' expects parameter '@EmployeeId', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at N5Challenge.Data.PermissionsRepository.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Data\PermissionsRepository.cs:line 26
+   at N5Challenge.Controllers.GetPermissionsController.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Controllers\GetPermissionsController.cs:line 31
+ClientConnectionId:35cce5e0-98d5-4448-b883-c5643fa06914
+Error Number:201,State:4,Class:16
+2024-02-29 01:43:22.765 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-02-29 01:43:22.769 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 1321.3865ms
+2024-02-29 01:43:22.769 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:43:22.774 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 400 null text/plain; charset=utf-8 1355.4607ms
+2024-02-29 01:43:38.017 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:43:38.017 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:43:38.018 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:43:42.699 -05:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC GetPermissions @param1=1
+2024-02-29 01:43:42.699 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'GetPermissions' expects parameter '@EmployeeId', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:35cce5e0-98d5-4448-b883-c5643fa06914
+Error Number:201,State:4,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'GetPermissions' expects parameter '@EmployeeId', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:35cce5e0-98d5-4448-b883-c5643fa06914
+Error Number:201,State:4,Class:16
+2024-02-29 01:44:24.478 -05:00 [ERR] Error while processing permission request
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'GetPermissions' expects parameter '@EmployeeId', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at N5Challenge.Data.PermissionsRepository.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Data\PermissionsRepository.cs:line 26
+   at N5Challenge.Controllers.GetPermissionsController.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Controllers\GetPermissionsController.cs:line 31
+ClientConnectionId:35cce5e0-98d5-4448-b883-c5643fa06914
+Error Number:201,State:4,Class:16
+2024-02-29 01:44:24.487 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-02-29 01:44:24.491 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 46472.6012ms
+2024-02-29 01:44:24.491 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:44:24.495 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 400 null text/plain; charset=utf-8 46477.626ms
+2024-02-29 01:44:27.600 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:44:27.600 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:44:27.600 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:45:16.807 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 01:45:16.830 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 01:45:16.845 -05:00 [INF] Hosting environment: Development
+2024-02-29 01:45:16.846 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 01:45:16.996 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 196.1946ms
+2024-02-29 01:45:17.044 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 01:45:17.046 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 01:45:17.075 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.6524ms
+2024-02-29 01:45:17.104 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.9151ms
+2024-02-29 01:45:17.424 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 01:45:17.497 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.9372ms
+2024-02-29 01:45:23.228 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:45:23.235 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:45:23.251 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:45:31.745 -05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC GetPermissions @EmployeeId=1
+2024-02-29 01:45:31.754 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2024-02-29 01:46:11.340 -05:00 [ERR] Error while processing permission request
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at N5Challenge.Data.PermissionsRepository.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Data\PermissionsRepository.cs:line 26
+   at N5Challenge.Controllers.GetPermissionsController.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Controllers\GetPermissionsController.cs:line 31
+2024-02-29 01:46:11.362 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-02-29 01:46:11.365 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 48112.0954ms
+2024-02-29 01:46:11.366 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:46:11.371 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 400 null text/plain; charset=utf-8 48142.4803ms
+2024-02-29 01:46:16.920 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:46:16.920 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:46:16.921 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:46:30.263 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC GetPermissions @EmployeeId=1
+2024-02-29 01:46:30.264 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2024-02-29 01:47:03.967 -05:00 [ERR] Error while processing permission request
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at N5Challenge.Data.PermissionsRepository.GetPermissions(Int32 employeeId)
+   at N5Challenge.Controllers.GetPermissionsController.GetPermissions(Int32 employeeId)
+2024-02-29 01:47:03.976 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-02-29 01:47:03.977 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 47056.1002ms
+2024-02-29 01:47:03.977 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:47:03.978 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 400 null text/plain; charset=utf-8 47058.2551ms
+2024-02-29 01:47:05.006 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 01:47:05.022 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 16.0984ms
+2024-02-29 01:47:05.080 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 01:47:05.088 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 01:47:05.089 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 0.7796ms
+2024-02-29 01:47:05.148 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.3065ms
+2024-02-29 01:47:05.215 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 01:47:05.222 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.4023ms
+2024-02-29 01:47:13.416 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 01:47:13.440 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 01:47:13.450 -05:00 [INF] Hosting environment: Development
+2024-02-29 01:47:13.450 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 01:47:13.597 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 186.3044ms
+2024-02-29 01:47:13.637 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 01:47:13.641 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 01:47:13.649 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.6918ms
+2024-02-29 01:47:13.684 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.2443ms
+2024-02-29 01:47:14.001 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 01:47:14.077 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.8815ms
+2024-02-29 01:47:17.870 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:47:17.877 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:47:17.893 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:47:35.754 -05:00 [INF] Executed DbCommand (25ms) [Parameters=[p0='?' (Size = 4000), p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC @p0 @EmployeeId=@p1
+2024-02-29 01:47:35.764 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2024-02-29 01:48:01.438 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (Size = 4000), p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC @p0 @EmployeeId=@p1
+2024-02-29 01:48:01.439 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2024-02-29 01:50:01.256 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 01:50:01.277 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 01:50:01.296 -05:00 [INF] Hosting environment: Development
+2024-02-29 01:50:01.296 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 01:50:01.447 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 202.0216ms
+2024-02-29 01:50:01.500 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 01:50:01.508 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 01:50:01.544 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.1744ms
+2024-02-29 01:50:01.573 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.1699ms
+2024-02-29 01:50:01.901 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 01:50:01.992 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.993ms
+2024-02-29 01:50:06.008 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:50:06.015 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:50:06.030 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:50:33.286 -05:00 [INF] Executed DbCommand (26ms) [Parameters=[p0='?' (Size = 4000), p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC @p0 @EmployeeId=@p1
+2024-02-29 01:50:33.297 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.ArgumentException: An item with the same key has already been added. Key: name
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2024-02-29 01:52:31.337 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 01:52:31.361 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 01:52:31.372 -05:00 [INF] Hosting environment: Development
+2024-02-29 01:52:31.372 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 01:52:31.525 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 194.6553ms
+2024-02-29 01:52:31.568 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 01:52:31.583 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 01:52:31.618 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.1431ms
+2024-02-29 01:52:31.642 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.2307ms
+2024-02-29 01:52:31.964 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 01:52:32.059 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.7924ms
+2024-02-29 01:52:36.680 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:52:36.686 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:52:36.701 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:52:43.545 -05:00 [INF] Executed DbCommand (28ms) [Parameters=[p0='?' (Size = 4000), p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC @p0 @EmployeeId=@p1
+2024-02-29 01:52:43.557 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+System.InvalidOperationException: The required column 'EmployeeId' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: The required column 'EmployeeId' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2024-02-29 01:53:18.588 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 01:53:18.614 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 01:53:18.623 -05:00 [INF] Hosting environment: Development
+2024-02-29 01:53:18.623 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 01:53:18.772 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 189.5925ms
+2024-02-29 01:53:18.827 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 01:53:18.833 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 01:53:18.871 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.221ms
+2024-02-29 01:53:18.901 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.4917ms
+2024-02-29 01:53:19.224 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 01:53:19.299 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.5803ms
+2024-02-29 01:53:23.525 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:53:23.531 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:53:23.545 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:53:29.918 -05:00 [INF] Executed DbCommand (27ms) [Parameters=[p0='?' (Size = 4000), p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC @p0 @EmployeeId=@p1
+2024-02-29 01:53:29.927 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+System.InvalidOperationException: The required column 'PermissionId' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: The required column 'PermissionId' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2024-02-29 01:53:40.173 -05:00 [ERR] Error while processing permission request
+System.InvalidOperationException: The required column 'PermissionId' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at N5Challenge.Data.PermissionsRepository.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Data\PermissionsRepository.cs:line 26
+   at N5Challenge.Controllers.GetPermissionsController.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Controllers\GetPermissionsController.cs:line 31
+2024-02-29 01:53:40.183 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-02-29 01:53:40.187 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 16638.7225ms
+2024-02-29 01:53:40.187 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:53:40.192 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 400 null text/plain; charset=utf-8 16667.5881ms
+2024-02-29 01:54:25.326 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:54:25.327 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:54:25.327 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:54:30.321 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[p0='?' (Size = 4000), p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC @p0 @EmployeeId=@p1
+2024-02-29 01:54:30.322 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+System.InvalidOperationException: The required column 'EmployeeId' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: The required column 'EmployeeId' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2024-02-29 01:55:07.567 -05:00 [ERR] Error while processing permission request
+System.InvalidOperationException: The required column 'EmployeeId' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at N5Challenge.Data.PermissionsRepository.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Data\PermissionsRepository.cs:line 26
+   at N5Challenge.Controllers.GetPermissionsController.GetPermissions(Int32 employeeId) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Controllers\GetPermissionsController.cs:line 31
+2024-02-29 01:55:07.574 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-02-29 01:55:07.574 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 42247.307ms
+2024-02-29 01:55:07.575 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:55:07.577 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 400 null text/plain; charset=utf-8 42248.7003ms
+2024-02-29 01:55:10.347 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 01:55:10.347 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 01:55:10.347 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 01:55:15.347 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[p0='?' (Size = 4000), p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC @p0 @EmployeeId=@p1
+2024-02-29 01:55:15.348 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'N5Challenge.Data.ApplicationDbContext'.
+System.InvalidOperationException: The required column 'Name' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: The required column 'Name' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2024-02-29 02:10:01.991 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 02:10:02.015 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 02:10:02.025 -05:00 [INF] Hosting environment: Development
+2024-02-29 02:10:02.025 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 02:10:02.205 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 220.7118ms
+2024-02-29 02:10:02.243 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 02:10:02.245 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 02:10:02.249 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.7899ms
+2024-02-29 02:10:02.309 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.984ms
+2024-02-29 02:10:02.645 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 02:10:02.726 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.2498ms
+2024-02-29 02:10:16.385 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 02:10:16.390 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 02:10:16.404 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 02:25:22.393 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 02:25:22.417 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 02:25:22.429 -05:00 [INF] Hosting environment: Development
+2024-02-29 02:25:22.429 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 02:25:22.572 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 186.2459ms
+2024-02-29 02:25:22.636 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 02:25:22.636 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 02:25:22.640 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.459ms
+2024-02-29 02:25:22.666 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.5206ms
+2024-02-29 02:25:22.988 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 02:25:23.069 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.203ms
+2024-02-29 02:25:27.248 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 02:25:27.254 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 02:25:27.268 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 02:25:31.907 -05:00 [INF] Display Permissions List by user request
+2024-02-29 02:25:31.911 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 02:25:31.917 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 4646.246ms
+2024-02-29 02:25:31.917 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 02:25:31.920 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 200 null application/json; charset=utf-8 4672.6646ms
+2024-02-29 02:32:10.780 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 02:32:10.804 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 02:32:10.815 -05:00 [INF] Hosting environment: Development
+2024-02-29 02:32:10.815 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 02:32:10.970 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 196.8032ms
+2024-02-29 02:32:11.057 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 02:32:11.070 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 02:32:11.081 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5046ms
+2024-02-29 02:32:11.104 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.7773ms
+2024-02-29 02:32:11.463 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 02:32:11.547 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.8079ms
+2024-02-29 02:32:30.312 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/WeatherForecast - null null
+2024-02-29 02:32:30.319 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.WeatherForecastController.Get (N5Challenge)'
+2024-02-29 02:32:30.328 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[N5Challenge.WeatherForecast] Get() on controller N5Challenge.Controllers.WeatherForecastController (N5Challenge).
+2024-02-29 02:32:30.334 -05:00 [INF] Executing ObjectResult, writing value of type 'N5Challenge.WeatherForecast[]'.
+2024-02-29 02:32:30.352 -05:00 [INF] Executed action N5Challenge.Controllers.WeatherForecastController.Get (N5Challenge) in 21.2955ms
+2024-02-29 02:32:30.352 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.WeatherForecastController.Get (N5Challenge)'
+2024-02-29 02:32:30.353 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/WeatherForecast - 200 null application/json; charset=utf-8 40.2616ms
+2024-02-29 02:32:37.579 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 02:32:37.586 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 6.8932ms
+2024-02-29 02:32:37.623 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 02:32:37.626 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 02:32:37.626 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8863ms
+2024-02-29 02:32:37.662 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.5269ms
+2024-02-29 02:32:37.749 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 02:32:37.755 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.3999ms
+2024-02-29 03:03:13.988 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:03:14.013 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 03:03:14.028 -05:00 [INF] Hosting environment: Development
+2024-02-29 03:03:14.029 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 03:03:14.189 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 208.0877ms
+2024-02-29 03:03:14.233 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:03:14.241 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.5927ms
+2024-02-29 03:03:14.242 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:03:14.287 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.6315ms
+2024-02-29 03:03:14.658 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:03:14.738 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.5086ms
+2024-02-29 03:03:58.286 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - null 0
+2024-02-29 03:03:58.292 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:03:58.307 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:03:58.427 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 03:03:58.448 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge) in 138.3147ms
+2024-02-29 03:03:58.448 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:03:58.450 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - 400 null application/problem+json; charset=utf-8 164.3823ms
+2024-02-29 03:05:16.321 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:05:16.344 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 03:05:16.360 -05:00 [INF] Hosting environment: Development
+2024-02-29 03:05:16.360 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 03:05:16.823 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 507.4845ms
+2024-02-29 03:05:16.868 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:05:16.868 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:05:16.885 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.4872ms
+2024-02-29 03:05:16.925 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.4912ms
+2024-02-29 03:05:17.240 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:05:17.325 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.9754ms
+2024-02-29 03:05:26.811 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - null 0
+2024-02-29 03:05:26.815 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:05:26.830 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:05:26.947 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 03:05:26.966 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge) in 133.5644ms
+2024-02-29 03:05:26.966 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:05:26.968 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - 400 null application/problem+json; charset=utf-8 157.289ms
+2024-02-29 03:05:59.081 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - null 0
+2024-02-29 03:05:59.082 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:05:59.082 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:05:59.093 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 03:05:59.093 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge) in 10.9966ms
+2024-02-29 03:05:59.093 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:05:59.093 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - 400 null application/problem+json; charset=utf-8 12.1845ms
+2024-02-29 03:06:03.013 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - null 0
+2024-02-29 03:06:03.013 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:06:03.013 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:06:03.016 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 03:06:03.017 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge) in 3.2529ms
+2024-02-29 03:06:03.017 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:06:03.017 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - 400 null application/problem+json; charset=utf-8 4.3223ms
+2024-02-29 03:06:05.451 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:06:05.460 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 9.0329ms
+2024-02-29 03:06:05.511 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:06:05.513 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:06:05.513 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.8519ms
+2024-02-29 03:06:05.527 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.3118ms
+2024-02-29 03:06:05.623 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:06:05.627 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.2929ms
+2024-02-29 03:06:16.375 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - null 0
+2024-02-29 03:06:16.375 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:06:16.376 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:06:16.377 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 03:06:16.377 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge) in 1.395ms
+2024-02-29 03:06:16.377 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:06:16.378 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - 400 null application/problem+json; charset=utf-8 2.5417ms
+2024-02-29 03:07:30.676 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:07:30.701 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 03:07:30.712 -05:00 [INF] Hosting environment: Development
+2024-02-29 03:07:30.713 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 03:07:30.869 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 199.5701ms
+2024-02-29 03:07:30.931 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:07:30.931 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:07:30.934 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.7503ms
+2024-02-29 03:07:30.965 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.4173ms
+2024-02-29 03:07:31.279 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:07:31.362 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.0861ms
+2024-02-29 03:07:41.792 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - null 0
+2024-02-29 03:07:41.798 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:07:41.813 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:07:41.931 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 03:07:41.952 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge) in 137.104ms
+2024-02-29 03:07:41.952 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.GetPermissions (N5Challenge)'
+2024-02-29 03:07:41.954 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - 400 null application/problem+json; charset=utf-8 162.8579ms
+2024-02-29 03:24:47.942 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:24:47.964 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 03:24:47.981 -05:00 [INF] Hosting environment: Development
+2024-02-29 03:24:47.981 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 03:24:48.135 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 201.3986ms
+2024-02-29 03:24:48.195 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:24:48.195 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:24:48.200 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.508ms
+2024-02-29 03:24:48.264 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.7208ms
+2024-02-29 03:24:48.600 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:24:48.679 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.1902ms
+2024-02-29 03:24:56.733 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - null 0
+2024-02-29 03:24:56.739 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:24:56.753 -05:00 [INF] Route matched with {action = "RequestPermission", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RequestPermission(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:24:56.863 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 03:24:56.883 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge) in 127.0005ms
+2024-02-29 03:24:56.883 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:24:56.887 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/{EmployeeId}, {PermissionTypeId}, {Name} - 400 null application/problem+json; charset=utf-8 154.1541ms
+2024-02-29 03:26:01.513 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:26:01.535 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 03:26:01.544 -05:00 [INF] Hosting environment: Development
+2024-02-29 03:26:01.544 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 03:26:01.685 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 177.8658ms
+2024-02-29 03:26:01.733 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:26:01.733 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:26:01.738 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.3748ms
+2024-02-29 03:26:01.767 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.4822ms
+2024-02-29 03:26:02.089 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:26:02.162 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.6313ms
+2024-02-29 03:26:09.072 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%201 - null 0
+2024-02-29 03:26:09.078 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:26:09.093 -05:00 [INF] Route matched with {action = "RequestPermission", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RequestPermission(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:27:02.752 -05:00 [INF] Register New Employee Permission
+2024-02-29 03:27:02.766 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-02-29 03:27:02.769 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge) in 53673.5075ms
+2024-02-29 03:27:02.769 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:27:02.773 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%201 - 200 null text/plain; charset=utf-8 53701.535ms
+2024-02-29 03:27:43.045 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%201 - null 0
+2024-02-29 03:27:43.046 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:27:43.046 -05:00 [INF] Route matched with {action = "RequestPermission", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RequestPermission(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:27:43.114 -05:00 [INF] Register New Employee Permission
+2024-02-29 03:27:43.115 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-02-29 03:27:43.115 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge) in 68.6909ms
+2024-02-29 03:27:43.115 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:27:43.115 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%201 - 200 null text/plain; charset=utf-8 70.2576ms
+2024-02-29 03:27:56.206 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%201 - null 0
+2024-02-29 03:27:56.207 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:27:56.207 -05:00 [INF] Route matched with {action = "RequestPermission", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RequestPermission(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:27:56.273 -05:00 [INF] Register New Employee Permission
+2024-02-29 03:27:56.274 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-02-29 03:27:56.274 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge) in 66.7196ms
+2024-02-29 03:27:56.274 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:27:56.274 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%201 - 200 null text/plain; charset=utf-8 68.2086ms
+2024-02-29 03:28:08.594 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:28:08.614 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 03:28:08.624 -05:00 [INF] Hosting environment: Development
+2024-02-29 03:28:08.624 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 03:28:08.798 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 209.905ms
+2024-02-29 03:28:08.856 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:28:08.856 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:28:08.863 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.8859ms
+2024-02-29 03:28:08.900 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.176ms
+2024-02-29 03:28:09.214 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:28:09.285 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.1589ms
+2024-02-29 03:28:19.657 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%201 - null 0
+2024-02-29 03:28:19.664 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:28:19.677 -05:00 [INF] Route matched with {action = "RequestPermission", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RequestPermission(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:29:48.929 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:29:48.948 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 03:29:48.958 -05:00 [INF] Hosting environment: Development
+2024-02-29 03:29:48.958 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 03:29:49.089 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 168.5128ms
+2024-02-29 03:29:49.151 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:29:49.151 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:29:49.159 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5347ms
+2024-02-29 03:29:49.195 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.0776ms
+2024-02-29 03:29:49.517 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:29:49.586 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.2678ms
+2024-02-29 03:29:58.037 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%201 - null 0
+2024-02-29 03:29:58.043 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:29:58.057 -05:00 [INF] Route matched with {action = "RequestPermission", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RequestPermission(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:31:16.434 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:31:16.455 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 03:31:16.469 -05:00 [INF] Hosting environment: Development
+2024-02-29 03:31:16.469 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 03:31:16.627 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 201.0619ms
+2024-02-29 03:31:16.673 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:31:16.673 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:31:16.683 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.0634ms
+2024-02-29 03:31:16.712 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.75ms
+2024-02-29 03:31:17.026 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:31:17.101 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.2596ms
+2024-02-29 03:31:24.574 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%201 - null 0
+2024-02-29 03:31:24.580 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:31:24.596 -05:00 [INF] Route matched with {action = "RequestPermission", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RequestPermission(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:32:00.439 -05:00 [INF] Register New Employee Permission
+2024-02-29 03:32:00.443 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-02-29 03:32:00.446 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge) in 35848.2132ms
+2024-02-29 03:32:00.446 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:32:00.450 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%201 - 200 null text/plain; charset=utf-8 35876.0366ms
+2024-02-29 03:32:30.504 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 03:32:30.505 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 03:32:30.509 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 03:32:34.265 -05:00 [INF] Display Permissions List
+2024-02-29 03:32:34.266 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 03:32:34.269 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 3760.1804ms
+2024-02-29 03:32:34.270 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 03:32:34.270 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 200 null application/json; charset=utf-8 3765.3816ms
+2024-02-29 03:34:00.303 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%202 - null 0
+2024-02-29 03:34:00.305 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:34:00.305 -05:00 [INF] Route matched with {action = "RequestPermission", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RequestPermission(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:35:30.214 -05:00 [INF] Register New Employee Permission
+2024-02-29 03:35:30.239 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-02-29 03:35:30.243 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge) in 89936.9762ms
+2024-02-29 03:35:30.244 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:35:30.244 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%202 - 200 null text/plain; charset=utf-8 89941.6763ms
+2024-02-29 03:35:52.154 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=1&permissionTypeId=1&name=From%20Browser%203 - null 0
+2024-02-29 03:35:52.156 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:35:52.157 -05:00 [INF] Route matched with {action = "RequestPermission", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RequestPermission(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:42:31.968 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:42:31.990 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 03:42:32.000 -05:00 [INF] Hosting environment: Development
+2024-02-29 03:42:32.000 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 03:42:32.137 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 174.7349ms
+2024-02-29 03:42:32.182 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:42:32.182 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:42:32.190 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.5386ms
+2024-02-29 03:42:32.218 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.9669ms
+2024-02-29 03:42:32.532 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:42:32.607 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.0237ms
+2024-02-29 03:42:44.027 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=2&permissionTypeId=2&name=From%20Browser%204 - null 0
+2024-02-29 03:42:44.032 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:42:44.045 -05:00 [INF] Route matched with {action = "RequestPermission", controller = "RequestPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RequestPermission(Int32, Int32, System.String) on controller N5Challenge.Controllers.RequestPermissionController (N5Challenge).
+2024-02-29 03:43:10.008 -05:00 [INF] Register New Employee Permission
+2024-02-29 03:43:10.013 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-02-29 03:43:10.016 -05:00 [INF] Executed action N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge) in 25968.4001ms
+2024-02-29 03:43:10.016 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.RequestPermissionController.RequestPermission (N5Challenge)'
+2024-02-29 03:43:10.020 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/RequestPermission/EmployeeId, PermissionTypeId, Name?employeeId=2&permissionTypeId=2&name=From%20Browser%204 - 200 null text/plain; charset=utf-8 25993.3763ms
+2024-02-29 03:43:21.016 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=2 - null null
+2024-02-29 03:43:21.016 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 03:43:21.018 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 03:43:23.782 -05:00 [INF] Display Permissions List
+2024-02-29 03:43:23.782 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 03:43:23.786 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 2766.9036ms
+2024-02-29 03:43:23.786 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 03:43:23.786 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=2 - 200 null application/json; charset=utf-8 2770.0561ms
+2024-02-29 03:57:51.818 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 03:57:51.839 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 03:57:51.850 -05:00 [INF] Hosting environment: Development
+2024-02-29 03:57:51.850 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 03:57:51.996 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 183.879ms
+2024-02-29 03:57:52.041 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 03:57:52.041 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 03:57:52.047 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5762ms
+2024-02-29 03:57:52.079 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.3164ms
+2024-02-29 03:57:52.398 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 03:57:52.474 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.5726ms
+2024-02-29 03:58:15.530 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - null null
+2024-02-29 03:58:15.535 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 03:58:15.548 -05:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-02-29 03:58:16.323 -05:00 [INF] Display Permissions List
+2024-02-29 03:58:16.327 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 03:58:16.333 -05:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 782.547ms
+2024-02-29 03:58:16.334 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-02-29 03:58:16.341 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/GetPermissions?employeeId=1 - 200 null application/json; charset=utf-8 810.6764ms
+2024-02-29 03:59:05.774 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/ModifyPermission/PermissionTypeId, Name?permissionTypeId=8&name=modify%20from%20browser - null 0
+2024-02-29 03:59:05.775 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.ModifyPermissionController.ModifyPermission (N5Challenge)'
+2024-02-29 03:59:05.777 -05:00 [INF] Route matched with {action = "ModifyPermission", controller = "ModifyPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ModifyPermission(Int32, System.String) on controller N5Challenge.Controllers.ModifyPermissionController (N5Challenge).
+2024-02-29 03:59:05.843 -05:00 [ERR] DATABASE ERROR
+System.FormatException: Failed to convert parameter value from a String to a Int32.
+ ---> System.FormatException: The input string 'modify from browser' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Microsoft.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- End of inner exception stack trace ---
+   at Microsoft.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   at Microsoft.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at Microsoft.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at Microsoft.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Boolean inSchema, SqlParameterCollection parameters)
+   at Microsoft.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at N5Challenge.Data.PermissionsRepository.ModifyPermission(Int32 permissionId, String name, ILogger`1 _logger) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Data\PermissionsRepository.cs:line 53
+2024-02-29 03:59:05.850 -05:00 [INF] Register New Employee Permission
+2024-02-29 03:59:05.850 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-02-29 03:59:05.851 -05:00 [INF] Executed action N5Challenge.Controllers.ModifyPermissionController.ModifyPermission (N5Challenge) in 73.8677ms
+2024-02-29 03:59:05.851 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.ModifyPermissionController.ModifyPermission (N5Challenge)'
+2024-02-29 03:59:05.851 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/ModifyPermission/PermissionTypeId, Name?permissionTypeId=8&name=modify%20from%20browser - 200 null text/plain; charset=utf-8 77.5585ms
+2024-02-29 03:59:47.631 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/ModifyPermission/PermissionTypeId, Name?permissionTypeId=8&name=modify%20from%20browser - null 0
+2024-02-29 03:59:47.633 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.ModifyPermissionController.ModifyPermission (N5Challenge)'
+2024-02-29 03:59:47.634 -05:00 [INF] Route matched with {action = "ModifyPermission", controller = "ModifyPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ModifyPermission(Int32, System.String) on controller N5Challenge.Controllers.ModifyPermissionController (N5Challenge).
+2024-02-29 04:00:38.486 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/index.html - null null
+2024-02-29 04:00:38.509 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 04:00:38.519 -05:00 [INF] Hosting environment: Development
+2024-02-29 04:00:38.519 -05:00 [INF] Content root path: D:\Users\Ruben\source\repos\.Net\N5Challenge
+2024-02-29 04:00:38.654 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/index.html - 200 null text/html;charset=utf-8 175.6574ms
+2024-02-29 04:00:38.705 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 04:00:38.706 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/_vs/browserLink - null null
+2024-02-29 04:00:38.722 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.5558ms
+2024-02-29 04:00:38.757 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.7813ms
+2024-02-29 04:00:39.100 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - null null
+2024-02-29 04:00:39.179 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44367/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.1304ms
+2024-02-29 04:01:11.504 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44367/ModifyPermission/PermissionTypeId, Name?permissionTypeId=8&name=modify%20from%20browser - null 0
+2024-02-29 04:01:11.510 -05:00 [INF] Executing endpoint 'N5Challenge.Controllers.ModifyPermissionController.ModifyPermission (N5Challenge)'
+2024-02-29 04:01:11.525 -05:00 [INF] Route matched with {action = "ModifyPermission", controller = "ModifyPermission"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ModifyPermission(Int32, System.String) on controller N5Challenge.Controllers.ModifyPermissionController (N5Challenge).
+2024-02-29 04:01:24.072 -05:00 [INF] Register New Employee Permission
+2024-02-29 04:01:24.076 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-02-29 04:01:24.079 -05:00 [INF] Executed action N5Challenge.Controllers.ModifyPermissionController.ModifyPermission (N5Challenge) in 12551.7284ms
+2024-02-29 04:01:24.079 -05:00 [INF] Executed endpoint 'N5Challenge.Controllers.ModifyPermissionController.ModifyPermission (N5Challenge)'
+2024-02-29 04:01:24.083 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44367/ModifyPermission/PermissionTypeId, Name?permissionTypeId=8&name=modify%20from%20browser - 200 null text/plain; charset=utf-8 12578.9732ms
