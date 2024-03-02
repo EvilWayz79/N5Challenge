@@ -1,4 +1,4 @@
-﻿ALTER PROCEDURE ModifyPermission
+﻿CREATE PROCEDURE ModifyPermission
 	@PermissionId int,
 	@Name nvarchar(50)
 AS

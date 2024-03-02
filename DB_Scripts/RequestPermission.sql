@@ -1,4 +1,4 @@
-﻿ALTER PROCEDURE RequestPermission
+﻿CREATE PROCEDURE RequestPermission
 	@EmployeeId int,
 	@PermissionID int,
 	@Name nvarchar(50)
@@ -9,7 +9,7 @@ AS
 
 		if @@ROWCOUNT > 0
 		begin
-			return 1 --success
+			return @@IDENTITY --success
 		end
 		else
 		begin

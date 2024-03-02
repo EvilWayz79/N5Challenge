@@ -1,4 +1,4 @@
-﻿ALTER PROCEDURE GetPermissions
+﻿CREATE PROCEDURE GetPermissions
 	@EmployeeId int
 AS
 	SELECT e.name as empName, p.name as perName, pt.name as ptName, p.PermissionId, e.EmployeeId, pt.PermissionTypeId

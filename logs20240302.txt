@@ -1,0 +1,52 @@
+2024-03-02 00:10:44.310 +00:00 [INF] Now listening on: http://[::]:8080
+2024-03-02 00:10:44.351 +00:00 [INF] Now listening on: https://[::]:8081
+2024-03-02 00:10:44.354 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 00:10:44.354 +00:00 [INF] Hosting environment: Development
+2024-03-02 00:10:44.355 +00:00 [INF] Content root path: /app
+2024-03-02 00:10:45.800 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32772/swagger/index.html - null null
+2024-03-02 00:10:45.956 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32772/swagger/index.html - 200 null text/html;charset=utf-8 157.126ms
+2024-03-02 00:10:46.448 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32772/swagger/v1/swagger.json - null null
+2024-03-02 00:10:46.515 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32772/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.3167ms
+2024-03-02 00:10:50.232 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32772/GetPermissions?employeeId=1 - null null
+2024-03-02 00:10:50.237 +00:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-03-02 00:10:50.255 +00:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).
+2024-03-02 00:11:40.092 +00:00 [ERR] DATABASE ERROR
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at N5Challenge.Data.PermissionsRepository.GetPermissions(Int32 employeeId, ILogger`1 _logger, IElasticClient elasticClient) in D:\Users\Ruben\source\repos\.Net\N5Challenge\Data\PermissionsRepository.cs:line 148
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+2024-03-02 00:11:40.099 +00:00 [INF] Display Permissions List
+2024-03-02 00:11:40.107 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[N5Challenge.ViewClasses.EmployeePermissionView, N5Challenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-02 00:11:40.118 +00:00 [INF] Executed action N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge) in 49857.6843ms
+2024-03-02 00:11:40.118 +00:00 [INF] Executed endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-03-02 00:11:40.123 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32772/GetPermissions?employeeId=1 - 200 null application/json; charset=utf-8 49891.6386ms
+2024-03-02 00:26:30.368 +00:00 [INF] Now listening on: http://[::]:8080
+2024-03-02 00:26:30.407 +00:00 [INF] Now listening on: https://[::]:8081
+2024-03-02 00:26:30.409 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 00:26:30.410 +00:00 [INF] Hosting environment: Development
+2024-03-02 00:26:30.411 +00:00 [INF] Content root path: /app
+2024-03-02 00:26:30.899 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32774/swagger/index.html - null null
+2024-03-02 00:26:31.015 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32774/swagger/index.html - 200 null text/html;charset=utf-8 116.7797ms
+2024-03-02 00:26:31.620 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32774/swagger/v1/swagger.json - null null
+2024-03-02 00:26:31.689 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32774/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.3773ms
+2024-03-02 00:27:08.012 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32774/GetPermissions?employeeId=1 - null null
+2024-03-02 00:27:08.021 +00:00 [INF] Executing endpoint 'N5Challenge.Controllers.GetPermissionsController.GetPermissions (N5Challenge)'
+2024-03-02 00:27:08.040 +00:00 [INF] Route matched with {action = "GetPermissions", controller = "GetPermissions"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPermissions(Int32) on controller N5Challenge.Controllers.GetPermissionsController (N5Challenge).

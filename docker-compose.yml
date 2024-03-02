@@ -1,0 +1,26 @@
+﻿version: '3.4'
+
+networks:
+    backend:
+        
+services:
+    n5challengedb:
+        container_name: N5_Database
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=yourStrong(!)Password 
+        networks:
+        - backend
+        ports:
+        - 8001:1433
+    n5challengewebapi:
+        container_name: N5_challenge
+        image: ${DOCKER_REGISTRY-}n5challenge
+        build:
+            context: .
+            dockerfile: N5_challenge/Dockerfile
+        networks:
+        - backend
+        ports:
+        - 8002:80

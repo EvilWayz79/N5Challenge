@@ -1,17 +1,15 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using N5Challenge.Controllers;
 using N5Challenge.Interfaces;
-using N5Challenge.Models;
 using N5Challenge.Tools;
 using N5Challenge.ViewClasses;
-using Serilog.Core;
-using System.ComponentModel;
 using System.Data;
-using System.Reflection.Metadata;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+
+using Nest;
+using N5Challenge.Models;
+using Elastic.Clients.Elasticsearch.Core.TermVectors;
 
 namespace N5Challenge.Data
 {
@@ -24,7 +22,8 @@ namespace N5Challenge.Data
             _context = context;
         }
 
-        public string ModifyPermission(int permissionId, string name, ILogger<ModifyPermissionController> _logger)
+        public string ModifyPermission(int permissionId, string name, ILogger<ModifyPermissionController> _logger,
+            IElasticClient elasticClient)
         {
             string returnString = GlobalData.TRANSACT_ERROR;
 
@@ -54,6 +53,7 @@ namespace N5Challenge.Data
 
                         if (conteoId > 0)
                             returnString = GlobalData.TRANSACT_OK;
+                            elasticClient.IndexDocument(_context.Permissions.Find(permissionId));
                     }
                 }
 
@@ -75,7 +75,8 @@ namespace N5Challenge.Data
         /// <param name="permissionTypeId"></param>
         /// <param name="name"></param>
         /// <returns></returns>
-        public string RequestPermission(int employeeId, int permissionTypeId, string name, ILogger<RequestPermissionController> _logger)
+        public string RequestPermission(int employeeId, int permissionTypeId, string name, ILogger<RequestPermissionController> _logger, 
+            IElasticClient elasticClient)
         {
             string returnString = GlobalData.TRANSACT_ERROR;
 
@@ -99,10 +100,13 @@ namespace N5Challenge.Data
 
                         con.Open();
 
-                        int conteoId = cmd.ExecuteNonQuery();                        
+                        int newId = cmd.ExecuteNonQuery();
 
-                        if (conteoId > 0)
+                        if (newId != 0)
+                        {
+                            elasticClient.IndexDocument(_context.Permissions.Find(newId));
                             returnString = GlobalData.TRANSACT_OK;
+                        }
                     }
                 }
 
@@ -122,7 +126,7 @@ namespace N5Challenge.Data
         /// </summary>
         /// <param name="employeeId"></param>
         /// <returns></returns>
-        public List<EmployeePermissionView> GetPermissions(int employeeId, ILogger<GetPermissionsController> _logger)
+        public List<EmployeePermissionView> GetPermissions(int employeeId, ILogger<GetPermissionsController> _logger, IElasticClient elasticClient)
         {
             List<EmployeePermissionView> lEmpView = new List<EmployeePermissionView>();
 
@@ -155,12 +159,16 @@ namespace N5Challenge.Data
                                     EmployeeName = idr["empName"].ToString(),
                                     PermissionDescription = idr["ptName"].ToString()
                                 };
-                                lEmpView.Add(epv); 
+                                lEmpView.Add(epv);
+
+                                //SELECT e.name as empName, p.name as perName, pt.name as ptName, p.PermissionId, e.EmployeeId, pt.PermissionTypeId
+                                int permissionId = int.Parse(idr["PermissionId"].ToString());
+
+                                elasticClient.IndexDocument(_context.Permissions.Find(permissionId));
                             }
                         }
                     }
                 }
-
             }
             catch (Exception ex)
             {
